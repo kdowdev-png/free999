@@ -16,7 +16,7 @@ class MyBot(commands.Bot):
                     def __init__(self, bot):
                         self.bot = bot
 
-                        @commands.command(name='setname', help='Change the bot's name')
+                        @commands.command(name='setname', help='Change the bot's name" )
     async def set_name(self, ctx, *, name: str):
         try:
             await self.bot.user.edit(username=name)
